@@ -1,0 +1,25 @@
+inherit kf5
+
+NAME="kf5-kjobwidgets"
+VERSION=5.9.0
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="KDE 5 job progress widget library"
+DESCRIPTION="KJobWIdgets provides widgets for showing progress of asynchronous
+jobs."
+
+PKG_NAMES="libKF5JobWidgets5 libKF5JobWidgets-devel"
+libKF5JobWidgets5_CONTENTS="
+	usr/bin/cygKF5JobWidgets-5.dll
+	usr/share/doc/
+	usr/share/locale/
+"
+libKF5JobWidgets_devel_REQUIRES="libKF5CoreAddons-devel libKF5WidgetsAddons-devel libQt5Core-devel libQt5Gui-devel libQt5X11Extras-devel"
+libKF5JobWidgets_devel_CONTENTS="
+	usr/include/KF5/KJobWidgets/
+	usr/include/KF5/kjobwidgets_version.h
+	usr/lib/cmake/KF5JobWidgets/
+	${QT5_MKSPECSDIR#/}/modules/qt_KJobWidgets.pri
+	usr/lib/libKF5JobWidgets.dll.a
+	usr/share/dbus-1/interfaces/
+"
