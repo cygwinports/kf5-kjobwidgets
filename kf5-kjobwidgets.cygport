@@ -1,7 +1,7 @@
 inherit kf5
 
 NAME="kf5-kjobwidgets"
-VERSION=5.27.0
+VERSION=5.35.0
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="KDE 5 job progress widget library"
@@ -23,3 +23,6 @@ libKF5JobWidgets_devel_CONTENTS="
 	usr/lib/libKF5JobWidgets.dll.a
 	usr/share/dbus-1/interfaces/
 "
+
+# depends on kcoreaddons.sip
+CYGCMAKE_ARGS="-DGBP_SIP_COMMAND=NOTFOUND"
