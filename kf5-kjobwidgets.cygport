@@ -1,7 +1,7 @@
 inherit kf5
 
 NAME="kf5-kjobwidgets"
-VERSION=5.39.0
+VERSION=5.43.0
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="KDE 5 job progress widget library"
@@ -10,6 +10,7 @@ jobs."
 
 PKG_NAMES="libKF5JobWidgets5 libKF5JobWidgets-devel"
 libKF5JobWidgets5_CONTENTS="
+	etc/xdg/kjobwidgets.categories
 	usr/bin/cygKF5JobWidgets-5.dll
 	usr/share/doc/
 	usr/share/locale/
